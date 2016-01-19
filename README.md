@@ -1,7 +1,7 @@
 # Damn Vulnerable Router Firmware (DVRF) v0.1
 
 Thanks for checking out my project. The goal of this project is to simulate a real world environment to help people learn about other CPU architectures outside of the x86_64 space. This project will also help people get into discovering new things about hardware.
-As of now this firmware is tailored for the Linksys E1550 Device. If you do not have one don't worry! There's also Qemu and I will write up some tutorials on how to do this since this is another learning aspect of embedded device hacking especially for exploit development. This is due to the fact that you may not have access to serial interfaces.
+As of now this firmware is tailored for the Linksys E1550 Device. If you do not have one don't worry! There's also Qemu and I will write up some tutorials on how to do this since this is another learning aspect of embedded device hacking especially for exploit development.
 
 ### Installation
 > To Install this binary onto your E1550 simply go to the Firmware Upgrade page (http://192.168.1.1/Upgrade.asp) and point the upgrade path to DVRF_v01.bin and click "Upgrade"
