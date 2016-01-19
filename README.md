@@ -18,5 +18,6 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 * Disable WAN Port **DO NOT HAVE THE WAN PORT PLUGGED IN WHEN INSTALLING OR RUNNING THIS!!!**
 * Create pwnables that incorporate exploit mitigations (e.g. Stack Cookies & DEP)
 * Create more Firmware images for other devices with different CPU architectures
+* Clean up and TAR the Source Code so anyone can compile it.
 
 -b1ack0wl
