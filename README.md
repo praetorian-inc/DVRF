@@ -9,10 +9,10 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 ### Removal || Revert
 > To revert back to stock simply navigate to the main page of DVRF (http://192.168.1.1/index.asp), Click Browse, Point it to the stock firmware binary, and Click "Upload Firmware"
 
-### Bugs
+#### Bugs
 * WiFi does not broadcast a SSID but all ethernet ports work and DHCP is enabled
 
-### TODO
+#### TODO
 * Implement new HTTPd
 * Implement new FTPd
 * Disable WAN Port **DO NOT HAVE THE WAN PORT PLUGGED IN WHEN INSTALLING OR RUNNING THIS!!!**
