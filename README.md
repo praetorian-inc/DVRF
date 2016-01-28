@@ -9,6 +9,9 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 ### Removal || Revert
 > To revert back to stock simply navigate to the main page of DVRF (http://192.168.1.1/index.asp), Click Browse, Point it to the stock firmware binary, and Click "Upload Firmware"
 
+### Source Code for pwnables
+> Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag -O0 to turn off compiler optimizations.
+
 #### Bugs
 * WiFi does not broadcast a SSID but all ethernet ports work and DHCP is enabled
 
@@ -20,4 +23,4 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 * Create more Firmware images for other devices with different CPU architectures
 * Clean up and TAR the Source Code so anyone can compile it.
 
--b1ack0wl
+-<a href="https://twitter.com/b1ack0wl">b1ack0wl</a>
