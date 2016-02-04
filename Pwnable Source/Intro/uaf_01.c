@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-//Simple Heap Overflow by b1ack0wl for E1550
+//Simple heap free list example by b1ack0wl
 
 int main(int argc, char **argv[]){
 char *heap_of;

@@ -8,9 +8,7 @@
 // Pwnable Socket Program
 // By b1ack0wl
 // Stack Overflow
-
-
- // Issue with port staying in a TIME_WAT state. 
+ 
 int main(int argc, char **argv[])
 {
 
@@ -20,24 +18,24 @@ printf("Usage: %s port_number - by b1ack0wl\n", argv[0]);
 exit(1);
 
 }
-
+ 
     char str[200] = "\0";
     char endstr[50] = "\0";
     int listen_fd, comm_fd;
     int retval = 0;
     int option = 1;
-
+ 
     struct sockaddr_in servaddr;
-
+ 
     listen_fd = socket(AF_INET, SOCK_STREAM, 0);
-
+ 
     bzero( &servaddr, sizeof(servaddr));
-
+ 
     servaddr.sin_family = AF_INET;
     servaddr.sin_addr.s_addr = htons(INADDR_ANY);
     servaddr.sin_port = htons(atoi(argv[1]));
 	printf("Binding to port %i\n", atoi(argv[1]));
-
+ 
     retval = bind(listen_fd, (struct sockaddr *) &servaddr, sizeof(servaddr));
 	if (retval == -1){
 	printf("Error Binding to port %i\n", atoi(argv[1]));
@@ -51,9 +49,9 @@ exit(1);
 
 
     listen(listen_fd, 2);
-
+ 
     comm_fd = accept(listen_fd, (struct sockaddr*) NULL, NULL);
-
+ 
         bzero(str, 200);
 	write(comm_fd, "Send Me Bytes:",14);
         read(comm_fd,str,200);

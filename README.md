@@ -1,4 +1,4 @@
-# Damn Vulnerable Router Firmware (DVRF) v0.1
+# Damn Vulnerable Router Firmware (DVRF) v0.2
 
 Thanks for checking out my project. The goal of this project is to simulate a real world environment to help people learn about other CPU architectures outside of the x86_64 space. This project will also help people get into discovering new things about hardware.
 As of now this firmware is tailored for the Linksys E1550 Device. If you do not have one don't worry! There's also Qemu and I will write up some tutorials on how to do this since this is another learning aspect of embedded device hacking especially for exploit development.
@@ -11,6 +11,10 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 
 ### Source Code for pwnables
 > Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag -O0 to turn off compiler optimizations.
+
+#### Fixes
+* Replaced execve("/bin/sh",0,0) with system("/bin/sh -c")
+* Due to "jr RA" I added exit(0) after the system() call to prevent infinite loops.
 
 #### Bugs
 * WiFi does not broadcast a SSID but all ethernet ports work and DHCP is enabled

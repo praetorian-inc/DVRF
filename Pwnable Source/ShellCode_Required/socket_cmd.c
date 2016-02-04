@@ -7,7 +7,7 @@
 
 // Pwnable Socket Program
 // By b1ack0wl
-// Stack Overflow
+// Command Injection
  
 int main(int argc, char **argv[])
 {

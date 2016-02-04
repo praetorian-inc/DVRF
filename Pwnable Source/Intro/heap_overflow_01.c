@@ -32,6 +32,7 @@ return 0;
 void dat_shell(){
 
 printf("Congrats! I will now execute /bin/sh - b1ack0wl\r\n");
-execve("/bin/sh", 0, 0);
+system("/bin/sh -c");
+exit(0);
 
 }
