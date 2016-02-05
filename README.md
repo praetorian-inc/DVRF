@@ -9,6 +9,9 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 ### Removal || Revert
 > To revert back to stock simply navigate to the main page of DVRF (http://192.168.1.1/index.asp), Click Browse, Point it to the stock firmware binary, and Click "Upload Firmware"
 
+### Getting Started
+> You don't have to have a E1550 in order to get started. The following link will show you how to get started with DVRF using QEMU to emulate the environment - https://www.praetorian.com/blog/getting-started-with-damn-vulnerable-router-firmware-dvrf-v0.1
+
 ### Source Code for pwnables
 > Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag -O0 to turn off compiler optimizations.
 
