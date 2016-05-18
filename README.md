@@ -15,7 +15,6 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 ### Source Code for pwnables
 > Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag -O0 to turn off compiler optimizations.
 
-<<<<<<< HEAD
 ### Compiling your own DVRF build
 > Execute **merge_and_compile.sh** and if the tar ball was successfully made you can run **clean.sh** to remove the 00* files.
 > To compile just extract the TAR file and run **make.sh** and make sure to update **toolchain.sh** to the path of your toolchain
@@ -23,7 +22,7 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 > Also note that the target linux version is 2.6 so you can either compile it on a 2.6 box like Fedora Core 11 or try compiling with the linux 2.6 headers.
 
 =======
->>>>>>> parent of 9a74148... DVRF_v03 release
+
 #### Fixes
 * Replaced execve("/bin/sh",0,0) with system("/bin/sh -c")
 * Due to "jr RA" I added exit(0) after the system() call to prevent infinite loops.
