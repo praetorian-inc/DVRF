@@ -1,4 +1,4 @@
-# Damn Vulnerable Router Firmware (DVRF) v0.2
+# Damn Vulnerable Router Firmware (DVRF) v0.3
 
 Thanks for checking out my project. The goal of this project is to simulate a real world environment to help people learn about other CPU architectures outside of the x86_64 space. This project will also help people get into discovering new things about hardware.
 As of now this firmware is tailored for the Linksys E1550 Device. If you do not have one don't worry! There's also Qemu and I will write up some tutorials on how to do this since this is another learning aspect of embedded device hacking especially for exploit development.
