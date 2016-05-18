@@ -19,7 +19,7 @@ exit(1);
 
 }
  
-    char str[200] = "\0";
+    char str[500] = "\0";
     char endstr[50] = "\0";
     int listen_fd, comm_fd;
     int retval = 0;
@@ -52,9 +52,9 @@ exit(1);
  
     comm_fd = accept(listen_fd, (struct sockaddr*) NULL, NULL);
  
-        bzero(str, 200);
+        bzero(str, 500);
 	write(comm_fd, "Send Me Bytes:",14);
-        read(comm_fd,str,200);
+        read(comm_fd,str,500);
 	sprintf(endstr, "nom nom nom, you sent me %s", str);
  	printf("Sent back - %s",str);
         write(comm_fd, endstr, strlen(endstr)+1);
