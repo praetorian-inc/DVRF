@@ -24,6 +24,7 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 
 #### Fixes
 * Included MIPSel buildroot to fix compilation issues.
+* Fixed shell scripts for merging and extracting the src TAR file.
 
 #### Notes
 * **DO NOT HAVE THE WAN PORT PLUGGED IN WHEN INSTALLING OR RUNNING THIS!!!**
