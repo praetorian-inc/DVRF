@@ -17,7 +17,7 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 > Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag -O0 to turn off compiler optimizations.
 
 ### Compiling your own DVRF build
-> Execute **merge_and_compile.sh** and if the tar ball was successfully made you can run **clean.sh** to remove the 00* files.
+> Execute **merge_and_compile.sh** and if the tar ball was successfully made you can run **clean.sh** to remove the -a* files.
 > Follow the insturctions within the "README.txt" file to compile your own firmware binaries.
 
 =======
