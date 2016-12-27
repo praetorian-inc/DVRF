@@ -30,6 +30,5 @@ As of now this firmware is tailored for the Linksys E1550 Device. If you do not 
 * **DO NOT HAVE THE WAN PORT PLUGGED IN WHEN INSTALLING OR RUNNING THIS!!!**
 * UART access is needed in order to execute the pwnable binaries.
 * WiFi is disabled, only the ethernet ports are available.
-* Encoder pwnable to be released in v04.
 
 -<a href="https://twitter.com/b1ack0wl">b1ack0wl</a>
