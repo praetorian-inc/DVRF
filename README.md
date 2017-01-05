@@ -17,14 +17,19 @@ You don't have to have a E1550 in order to get started. The following link will 
 Feel free to take a look at the source code for the pwnables so you can get a better understanding MIPS assembly. Please note that the compiled binaries used gcc flag `-O0` to turn off compiler optimizations.
 
 ### Compiling your own DVRF build
-Execute **merge_and_compile.sh** and if the tar ball was successfully made you can run **clean.sh** to remove the -a* files.
 
-Follow the instructions within the `"README.txt"` file to compile your own firmware binaries
+* Download the Fedora 11 x86 ISO: https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/i386/iso/Fedora-11-i386-DVD.iso
+* Deploy a new VM and Install Fedora Core 11
+  * **VirtualBox Installation Note**: You'll need to setup the environment as `"Linux --> Other (32-bit)"` since the Fedora template uses a SATA drive which for some reason hangs the login screen.
+* Execute `merge_and_compile.sh` and if the tar ball was successfully made you can run `clean.sh` to remove the `-a*` files.
+* Execute `deps.sh` to download and install all of the needed dependencies.
+* Follow the instructions within the `"README.txt"` file to compile your own firmware binaries
 
 =======
 
 #### Fixes
 * Included MIPSel buildroot to fix compilation issues.
+* Created `deps.sh` to install all of the needed dependencies for compiling.
 * Fixed shell scripts for merging and extracting the source TAR file.
 
 #### Notes
@@ -32,4 +37,4 @@ Follow the instructions within the `"README.txt"` file to compile your own firmw
 * UART access is needed in order to execute the pwnable binaries.
 * WiFi is disabled, only the ethernet ports are available.
 
--<a href="https://twitter.com/b1ack0wl">b1ack0wl</a>
+<a href="https://twitter.com/b1ack0wl">b1ack0wl</a>
