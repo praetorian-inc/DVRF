@@ -21,7 +21,7 @@ Feel free to take a look at the source code for the pwnables so you can get a be
 * Download the Fedora 11 x86 ISO: https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/i386/iso/Fedora-11-i386-DVD.iso
 * Deploy a new VM and Install Fedora Core 11
   * **VirtualBox Installation Note**: You'll need to setup the environment as `"Linux --> Other (32-bit)"` since the Fedora template uses a SATA drive which for some reason hangs the login screen.
-* Execute `merge_and_compile.sh` and if the tar ball was successfully made you can run `clean.sh` to remove the `-a*` files.
+* Execute `merge_and_extract.sh` and if the tar ball was successfully made you can run `clean.sh` to remove the `-a*` files.
 * Execute `deps.sh` to download and install all of the needed dependencies.
 * Follow the instructions within the `"README.txt"` file to compile your own firmware binaries
 
