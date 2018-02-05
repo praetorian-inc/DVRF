@@ -2,10 +2,10 @@
 
 Thanks for checking out my project. The goal of this project is to simulate a real world environment to help people learn about other CPU architectures outside of the x86_64 space. This project is also for those who are curious about embedded research, but don't want to invest a lot of money.
 
-This firmware was developed by modifying the [GPL source code](http://downloads.linksys.com/downloads/gplcode/1224700471571/E1550_1.0.03.002.tar.gz) for the Linksys E1550. If you do not have an E1550 don't worry! There's always QEMU and I encourage end users to experiment with both environments.
+This firmware was developed by modifying the [GPL source code](http://downloads.linksys.com/downloads/gplcode/1224700471571/E1550_1.0.03.002.tar.gz) for the [Linksys E1550](https://www.linksys.com/us/support-product?pid=01t80000003K7WIAA0). If you do not have an E1550 don't worry! There's always QEMU and I encourage end users to experiment with both environments.
 
 ### Installation
-To Install this binary onto your E1550 simply go to the Firmware Upgrade page `http://192.168.1.1/Upgrade.asp` and point the upgrade path to DVRF_v04.bin and click `"Upgrade"`
+To Install this binary onto your E1550 simply go to the Firmware Upgrade page `http://192.168.1.1/Upgrade.asp` and point the upgrade path to DVRF_v05.bin and click `"Upgrade"`
 
 ### Removal || Revert
 To revert back to stock simply navigate to the main page of DVRF `http://192.168.1.1/index.asp`, Click Browse, Point it to the stock firmware binary, and Click `"Upload Firmware"`
@@ -36,7 +36,7 @@ Feel free to take a look at the source code for the pwnables so you can get a be
 * **DO NOT HAVE THE WAN PORT PLUGGED IN WHEN INSTALLING OR RUNNING THIS!!!**
 * UART access is needed in order to execute the pwnable binaries.
 * WiFi is disabled, only the ethernet ports are available.
-* DVRF is a free tool for everything. Anything written up for this project must be made available to the public for free.
+* Anything written up for this project must be made available to the public for free.
 * New levels will be released soon. DVRF will be overhauled without the hacked GPL code to make it easier to read+modify. Plus, I'm tired of having to use Fedora 11 for this.
 
 <a href="https://twitter.com/b1ack0wl">b1ack0wl</a>
